@@ -258,7 +258,7 @@ function saveBreathingSession() {
 function playAmbientSound(soundName) {
     stopAmbientSound();
     
-    currentAudio = new Audio(`sounds/${soundName}.mp3`);
+    currentAudio = new Audio(`./sounds/${soundName}.mp3`);
     currentAudio.loop = true;
     currentAudio.volume = 0.3; // Set moderate volume like workout music
     
